@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+ 
+* {
+    background-color: #151515;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+ 
+a {
+    text-decoration: none;
+}
+ 
+h2,
+h3,
+p,
+a {
+    background: transparent;
+ 
+}
+ 
+body {
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 100%; 
+}
+ 
+#clickanywhere {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+ 
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+img {
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 125px;
+    transition: border-radius 0.3s ease;
+}
+ 
+img:hover {
+    border-radius: 30px;
+}
+ 
+.box {
+    background-color: #252525;
+    height: auto;
+    width: 600px;
+    border-radius: 15px;
+    border: 5px solid #202020;
+}
+ 
+.box h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ 
+hr {
+    border: 2px solid #202020;
+}
+ 
+i {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    display: inline-block;
+    font-size: 30px;
+    width: 50px;
+    transition: 0.2s;
+    transition: color 0.3s ease;
+}
+ 
+i:hover {
+    color: #606060;
+}
+ 
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #00FF00 0%,
+            #FFFF00 29%,
+            #FF7F00 67%,
+            #FF0000 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 20px;
+}
+ 
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+ 
+ 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: blue;
+}
+ 
+.alert-warning:hover {
+    transition: 0.5s;
+}
+ 
+.warning {
+    font-size: 18px;
+    text-shadow: none;
+}
+ 
+.alert>.start-icon {
+    margin-right: 0;
+    min-width: 20px;
+    text-align: center;
+}
+ 
+.scroll-bar {
+    height: 100%;
+    width: 2000px;
+    overflow: auto;
+}
